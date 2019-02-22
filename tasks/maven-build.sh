@@ -24,6 +24,8 @@ echo "Building artifact ..."
 mvn verify ${MAVEN_ARGS}
 
 echo "Copying artifact to ./build "
-cp target/*.jar ../build
+cp target/*. ../build/target
+cp Dockerfile ../build
+
 
 ls -a ../build
