@@ -23,8 +23,8 @@ mvn versions:set -DnewVersion=${VERSION}
 echo "Building artifact ..."
 mvn verify ${MAVEN_ARGS}
 
-echo "Copying artifact to ./build "
-cp target/*. ../build/target
+echo "Copying artifact to ../build "
+cp target/*. ../build
 cp Dockerfile ../build
 
 
