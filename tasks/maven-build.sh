@@ -26,6 +26,8 @@ mvn verify ${MAVEN_ARGS}
 echo "Copying artifact to ../build "
 ls -la .
 ls -la target/
+ls ..
+ls ../build
 cp target/*. ../build
 cp Dockerfile ../build
 
