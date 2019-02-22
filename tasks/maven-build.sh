@@ -28,5 +28,5 @@ mkdir -p ../build/docker/app/META-INF
 cp -r target/dependency/BOOT-INF/lib ../build/docker/app/lib
 cp -r target/dependency/META-INF ../build/docker/app/META-INF
 cp -r target/dependency/BOOT-INF/classes ../build/docker/app
-cp Dockerfile ../build/docker
+cp Dockerfile.concourse ../build/docker/Dockerfile
 
