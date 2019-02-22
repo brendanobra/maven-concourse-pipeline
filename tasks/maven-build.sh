@@ -24,10 +24,15 @@ echo "Building artifact ..."
 mvn verify ${MAVEN_ARGS}
 
 echo "Copying artifact to ../build "
+echo ". is: "
 ls -la .
+"echo target is: "
 ls -la target/
+".. is: "
 ls ..
+"../build  is: "
 ls ../build
+
 cp target/*. ../build
 cp Dockerfile ../build
 
