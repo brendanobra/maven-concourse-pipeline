@@ -22,3 +22,5 @@ mvn versions:set -DnewVersion=${VERSION}
 
 echo "Building artifact ..."
 mvn package -DskipTest ${MAVEN_ARGS}
+echo "pwd="
+echo `pwd`
