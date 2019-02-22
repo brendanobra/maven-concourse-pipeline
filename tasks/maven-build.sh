@@ -14,8 +14,6 @@ source ./pipeline/tasks/common.sh
 VERSION=$(build_version "./version" "number" "./source-code" $BRANCH)
 echo "Version to build: ${VERSION}"
 
-echo "Generating maven settings.xml"
-./pipeline/tasks/generate-settings.sh
 
 cd source-code
 
