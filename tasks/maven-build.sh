@@ -16,11 +16,11 @@ echo "Version to build: ${VERSION}"
 
 cd source-code
 
-echo "Setting maven with version to build"
-mvn versions:set -DnewVersion=${VERSION}
+echo "Setting maven with version to build to $VERSION"
+mvn versions:set -DskipTests -DnewVersion=${VERSION}
 
 echo "Building artifact ..."
-mvn package -DskipTest ${MAVEN_ARGS}
+mvn package -DskipTests ${MAVEN_ARGS}
 echo "Copying artifacts to ../build "
 mkdir -p ../build/app/lib
 mkdir -p ../build/app/META-INF
